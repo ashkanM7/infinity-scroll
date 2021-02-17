@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 html{
     box-sizing: border-box;
 }
 
 body{
     margin: 0;
-    /* min-height: 100vh; */
+     min-height: 100vh; 
     font-family: Nunito, sans-serif;
     background: whitesmoke;
 }
@@ -27,9 +28,38 @@ h1{
     background: rgba(255, 255, 255, 0.8);
 }
 
+/* To Put the icon in the center of the page*/
 .loader img{
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.image-container{
+    margin: 10px 30%;
+}
+
+.image-container img{
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* Media Query: Large Smart Phone */
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 20px;
+    }
+
+    .image-container{
+        margin: 10px;
+    }
+}
+
+/* Media query: Small Smart Phone */
+
+@media screen and (max-width: 350px){
+    h1{
+        font-size: 16px;
+    }
 }
